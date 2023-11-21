@@ -1,0 +1,261 @@
+# Logfile created on 2023-11-21 16:10:25 +0900 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-11-21 16:10:25 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [bba7c4bb] Running [ -d $HOME/.rbenv/versions/2.6.0 ] as ec2-user@54.250.124.86
+ DEBUG [bba7c4bb] Command: [ -d $HOME/.rbenv/versions/2.6.0 ]
+ DEBUG [bba7c4bb] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [42bc58b1] Running /usr/bin/env sudo mkdir -p /opt/ppaphotel/shared/config as ec2-user@54.250.124.86
+ DEBUG [42bc58b1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo mkdir -p /opt/ppaphotel/shared/config )
+  INFO [42bc58b1] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [d22ed20e] Running /usr/bin/env sudo chown -R ec2-user.ec2-user /opt/ppaphotel as ec2-user@54.250.124.86
+ DEBUG [d22ed20e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo chown -R ec2-user.ec2-user /opt/ppaphotel )
+  INFO [d22ed20e] Finished in 2.262 seconds with exit status 0 (successful).
+  INFO [a83b760b] Running /usr/bin/env sudo mkdir -p /etc/nginx/sites-enabled as ec2-user@54.250.124.86
+ DEBUG [a83b760b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo mkdir -p /etc/nginx/sites-enabled )
+  INFO [a83b760b] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [c993322f] Running /usr/bin/env sudo mkdir -p /etc/nginx/sites-available as ec2-user@54.250.124.86
+ DEBUG [c993322f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo mkdir -p /etc/nginx/sites-available )
+  INFO [c993322f] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG Uploading config/database.yml 0.0%
+  INFO Uploading config/database.yml 100.0%
+ DEBUG Uploading config/credentials.yml.enc 0.0%
+  INFO Uploading config/credentials.yml.enc 100.0%
+ DEBUG Uploading config/master.key 0.0%
+  INFO Uploading config/master.key 100.0%
+  INFO [3a969a53] Running /usr/bin/env mkdir -p /tmp as ec2-user@54.250.124.86
+ DEBUG [3a969a53] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [3a969a53] Finished in 0.114 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e2d54bbcdf23c7fbda3b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e2d54bbcdf23c7fbda3b.sh 100.0%
+  INFO [2de34e26] Running /usr/bin/env chmod 700 /tmp/git-ssh-e2d54bbcdf23c7fbda3b.sh as ec2-user@54.250.124.86
+ DEBUG [2de34e26] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-e2d54bbcdf23c7fbda3b.sh )
+  INFO [2de34e26] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [a1278c45] Running /usr/bin/env git ls-remote git@example.com:me/my_repo.git HEAD as ec2-user@54.250.124.86
+ DEBUG [a1278c45] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e2d54bbcdf23c7fbda3b.sh" ; /usr/bin/env git ls-remote git@example.com:me/my_repo.git HEAD )
+ DEBUG [a1278c45] 	ssh: connect to host example.com port 22: Network is unreachable
+ DEBUG [a1278c45] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-11-21 16:46:05 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ceca0d68] Running [ -d $HOME/.rbenv/versions/2.6.0 ] as ec2-user@54.250.124.86
+ DEBUG [ceca0d68] Command: [ -d $HOME/.rbenv/versions/2.6.0 ]
+ DEBUG [ceca0d68] Finished in 0.438 seconds with exit status 0 (successful).
+  INFO [8d2e659a] Running /usr/bin/env sudo mkdir -p /opt/ppaphotel/shared/config as ec2-user@54.250.124.86
+ DEBUG [8d2e659a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo mkdir -p /opt/ppaphotel/shared/config )
+  INFO [8d2e659a] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [68bec60f] Running /usr/bin/env sudo chown -R ec2-user.ec2-user /opt/ppaphotel as ec2-user@54.250.124.86
+ DEBUG [68bec60f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo chown -R ec2-user.ec2-user /opt/ppaphotel )
+  INFO [68bec60f] Finished in 0.426 seconds with exit status 0 (successful).
+  INFO [7bc0d649] Running /usr/bin/env sudo mkdir -p /etc/nginx/sites-enabled as ec2-user@54.250.124.86
+ DEBUG [7bc0d649] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo mkdir -p /etc/nginx/sites-enabled )
+  INFO [7bc0d649] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [3064cadb] Running /usr/bin/env sudo mkdir -p /etc/nginx/sites-available as ec2-user@54.250.124.86
+ DEBUG [3064cadb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env sudo mkdir -p /etc/nginx/sites-available )
+  INFO [3064cadb] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG Uploading config/database.yml 0.0%
+  INFO Uploading config/database.yml 100.0%
+ DEBUG Uploading config/credentials.yml.enc 0.0%
+  INFO Uploading config/credentials.yml.enc 100.0%
+ DEBUG Uploading config/master.key 0.0%
+  INFO Uploading config/master.key 100.0%
+  INFO [8ce491fa] Running /usr/bin/env mkdir -p /tmp as ec2-user@54.250.124.86
+ DEBUG [8ce491fa] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [8ce491fa] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-839c78e08dff357b7f12.sh 0.0%
+  INFO Uploading /tmp/git-ssh-839c78e08dff357b7f12.sh 100.0%
+  INFO [1cd216a3] Running /usr/bin/env chmod 700 /tmp/git-ssh-839c78e08dff357b7f12.sh as ec2-user@54.250.124.86
+ DEBUG [1cd216a3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-839c78e08dff357b7f12.sh )
+  INFO [1cd216a3] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [49aceda2] Running /usr/bin/env git ls-remote https://github.com/MasamiOno-dev/NewPPAP HEAD as ec2-user@54.250.124.86
+ DEBUG [49aceda2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-839c78e08dff357b7f12.sh" ; /usr/bin/env git ls-remote https://github.com/MasamiOno-dev/NewPPAP HEAD )
+ DEBUG [49aceda2] 	698450c95503c01a85adb0b67102e7e4404ecb55	HEAD
+  INFO [49aceda2] Finished in 0.606 seconds with exit status 0 (successful).
+  INFO [c8e9d2ce] Running /usr/bin/env mkdir -p /opt/ppaphotel/shared /opt/ppaphotel/releases as ec2-user@54.250.124.86
+ DEBUG [c8e9d2ce] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env mkdir -p /opt/ppaphotel/shared /opt/ppaphotel/releases )
+  INFO [c8e9d2ce] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [1f5467b3] Running /usr/bin/env mkdir -p /opt/ppaphotel/shared/log /opt/ppaphotel/shared/tmp/pids /opt/ppaphotel/shared/tmp/cache /opt/ppaphotel/shared/tmp/sockets /opt/ppaphotel/shared/vendor/bundle /opt/ppaphotel/shared/public/system /opt/ppaphotel/shared/public/uploads /opt/ppaphotel/shared/public/assets as ec2-user@54.250.124.86
+ DEBUG [1f5467b3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env mkdir -p /opt/ppaphotel/shared/log /opt/ppaphotel/shared/tmp/pids /opt/ppaphotel/shared/tmp/cache /opt/ppaphotel/shared/tmp/sockets /opt/ppaphotel/shared/vendor/bundle /opt/ppaphotel/shared/public/system /opt/ppaphotel/shared/public/uploads /opt/ppaphotel/shared/public/assets )
+  INFO [1f5467b3] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [9cd60249] Running /usr/bin/env mkdir -p /opt/ppaphotel/shared/config as ec2-user@54.250.124.86
+ DEBUG [9cd60249] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env mkdir -p /opt/ppaphotel/shared/config )
+  INFO [9cd60249] Finished in 0.114 seconds with exit status 0 (successful).
+ DEBUG [7e62fbde] Running [ -f /opt/ppaphotel/shared/config/database.yml ] as ec2-user@54.250.124.86
+ DEBUG [7e62fbde] Command: [ -f /opt/ppaphotel/shared/config/database.yml ]
+ DEBUG [7e62fbde] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [6653b6bd] Running [ -f /opt/ppaphotel/shared/config/credentials.yml.enc ] as ec2-user@54.250.124.86
+ DEBUG [6653b6bd] Command: [ -f /opt/ppaphotel/shared/config/credentials.yml.enc ]
+ DEBUG [6653b6bd] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [e8184b21] Running [ -f /opt/ppaphotel/shared/config/master.key ] as ec2-user@54.250.124.86
+ DEBUG [e8184b21] Command: [ -f /opt/ppaphotel/shared/config/master.key ]
+ DEBUG [e8184b21] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [140af739] Running [ -f /opt/ppaphotel/current/REVISION ] as ec2-user@54.250.124.86
+ DEBUG [140af739] Command: [ -f /opt/ppaphotel/current/REVISION ]
+ DEBUG [140af739] Finished in 0.117 seconds with exit status 1 (failed).
+ DEBUG [c090b067] Running [ -f /opt/ppaphotel/repo/HEAD ] as ec2-user@54.250.124.86
+ DEBUG [c090b067] Command: [ -f /opt/ppaphotel/repo/HEAD ]
+ DEBUG [c090b067] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /opt/ppaphotel/repo
+ DEBUG [003b5e8a] Running if test ! -d /opt/ppaphotel/repo; then echo "Directory does not exist '/opt/ppaphotel/repo'" 1>&2; false; fi as ec2-user@54.250.124.86
+ DEBUG [003b5e8a] Command: if test ! -d /opt/ppaphotel/repo; then echo "Directory does not exist '/opt/ppaphotel/repo'" 1>&2; false; fi
+ DEBUG [003b5e8a] Finished in 0.111 seconds with exit status 0 (successful).
+  INFO [8af884a1] Running /usr/bin/env git remote set-url origin https://github.com/MasamiOno-dev/NewPPAP as ec2-user@54.250.124.86
+ DEBUG [8af884a1] Command: cd /opt/ppaphotel/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-839c78e08dff357b7f12.sh" ; /usr/bin/env git remote set-url origin https://github.com/MasamiOno-dev/NewPPAP )
+  INFO [8af884a1] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [b416c9bf] Running /usr/bin/env git remote update --prune as ec2-user@54.250.124.86
+ DEBUG [b416c9bf] Command: cd /opt/ppaphotel/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-839c78e08dff357b7f12.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b416c9bf] 	From https://github.com/MasamiOno-dev/NewPPAP
+ + 8943acd...698450c main       -> main  (forced update)
+  INFO [b416c9bf] Finished in 1.240 seconds with exit status 0 (successful).
+ DEBUG [3fc64b36] Running if test ! -d /opt/ppaphotel/repo; then echo "Directory does not exist '/opt/ppaphotel/repo'" 1>&2; false; fi as ec2-user@54.250.124.86
+ DEBUG [3fc64b36] Command: if test ! -d /opt/ppaphotel/repo; then echo "Directory does not exist '/opt/ppaphotel/repo'" 1>&2; false; fi
+ DEBUG [3fc64b36] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [596c0c7b] Running /usr/bin/env mkdir -p /opt/ppaphotel/releases/20231121074609 as ec2-user@54.250.124.86
+ DEBUG [596c0c7b] Command: cd /opt/ppaphotel/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-839c78e08dff357b7f12.sh" ; /usr/bin/env mkdir -p /opt/ppaphotel/releases/20231121074609 )
+  INFO [596c0c7b] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [9443c0bd] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /opt/ppaphotel/releases/20231121074609 as ec2-user@54.250.124.86
+ DEBUG [9443c0bd] Command: cd /opt/ppaphotel/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-839c78e08dff357b7f12.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /opt/ppaphotel/releases/20231121074609 )
+  INFO [9443c0bd] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [905bbd29] Running if test ! -d /opt/ppaphotel/repo; then echo "Directory does not exist '/opt/ppaphotel/repo'" 1>&2; false; fi as ec2-user@54.250.124.86
+ DEBUG [905bbd29] Command: if test ! -d /opt/ppaphotel/repo; then echo "Directory does not exist '/opt/ppaphotel/repo'" 1>&2; false; fi
+ DEBUG [905bbd29] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [a4907bf8] Running /usr/bin/env git rev-list --max-count=1 main as ec2-user@54.250.124.86
+ DEBUG [a4907bf8] Command: cd /opt/ppaphotel/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-839c78e08dff357b7f12.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [a4907bf8] 	698450c95503c01a85adb0b67102e7e4404ecb55
+ DEBUG [a4907bf8] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [c748659f] Running if test ! -d /opt/ppaphotel/releases/20231121074609; then echo "Directory does not exist '/opt/ppaphotel/releases/20231121074609'" 1>&2; false; fi as ec2-user@54.250.124.86
+ DEBUG [c748659f] Command: if test ! -d /opt/ppaphotel/releases/20231121074609; then echo "Directory does not exist '/opt/ppaphotel/releases/20231121074609'" 1>&2; false; fi
+ DEBUG [c748659f] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [30057eaa] Running /usr/bin/env echo "698450c95503c01a85adb0b67102e7e4404ecb55" > REVISION as ec2-user@54.250.124.86
+ DEBUG [30057eaa] Command: cd /opt/ppaphotel/releases/20231121074609 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env echo "698450c95503c01a85adb0b67102e7e4404ecb55" > REVISION )
+  INFO [30057eaa] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [a39e3788] Running /usr/bin/env mkdir -p /opt/ppaphotel/releases/20231121074609/config as ec2-user@54.250.124.86
+ DEBUG [a39e3788] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env mkdir -p /opt/ppaphotel/releases/20231121074609/config )
+  INFO [a39e3788] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [9b2b12ed] Running [ -L /opt/ppaphotel/releases/20231121074609/config/database.yml ] as ec2-user@54.250.124.86
+ DEBUG [9b2b12ed] Command: [ -L /opt/ppaphotel/releases/20231121074609/config/database.yml ]
+ DEBUG [9b2b12ed] Finished in 0.117 seconds with exit status 1 (failed).
+ DEBUG [ccbe6657] Running [ -f /opt/ppaphotel/releases/20231121074609/config/database.yml ] as ec2-user@54.250.124.86
+ DEBUG [ccbe6657] Command: [ -f /opt/ppaphotel/releases/20231121074609/config/database.yml ]
+ DEBUG [ccbe6657] Finished in 0.114 seconds with exit status 1 (failed).
+  INFO [cae15578] Running /usr/bin/env ln -s /opt/ppaphotel/shared/config/database.yml /opt/ppaphotel/releases/20231121074609/config/database.yml as ec2-user@54.250.124.86
+ DEBUG [cae15578] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/config/database.yml /opt/ppaphotel/releases/20231121074609/config/database.yml )
+  INFO [cae15578] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [22882823] Running [ -L /opt/ppaphotel/releases/20231121074609/config/credentials.yml.enc ] as ec2-user@54.250.124.86
+ DEBUG [22882823] Command: [ -L /opt/ppaphotel/releases/20231121074609/config/credentials.yml.enc ]
+ DEBUG [22882823] Finished in 0.120 seconds with exit status 1 (failed).
+ DEBUG [da22b633] Running [ -f /opt/ppaphotel/releases/20231121074609/config/credentials.yml.enc ] as ec2-user@54.250.124.86
+ DEBUG [da22b633] Command: [ -f /opt/ppaphotel/releases/20231121074609/config/credentials.yml.enc ]
+ DEBUG [da22b633] Finished in 0.117 seconds with exit status 1 (failed).
+  INFO [a1949463] Running /usr/bin/env ln -s /opt/ppaphotel/shared/config/credentials.yml.enc /opt/ppaphotel/releases/20231121074609/config/credentials.yml.enc as ec2-user@54.250.124.86
+ DEBUG [a1949463] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/config/credentials.yml.enc /opt/ppaphotel/releases/20231121074609/config/credentials.yml.enc )
+  INFO [a1949463] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [165bf059] Running [ -L /opt/ppaphotel/releases/20231121074609/config/master.key ] as ec2-user@54.250.124.86
+ DEBUG [165bf059] Command: [ -L /opt/ppaphotel/releases/20231121074609/config/master.key ]
+ DEBUG [165bf059] Finished in 0.122 seconds with exit status 1 (failed).
+ DEBUG [ae920f62] Running [ -f /opt/ppaphotel/releases/20231121074609/config/master.key ] as ec2-user@54.250.124.86
+ DEBUG [ae920f62] Command: [ -f /opt/ppaphotel/releases/20231121074609/config/master.key ]
+ DEBUG [ae920f62] Finished in 0.117 seconds with exit status 1 (failed).
+  INFO [84bcdd0e] Running /usr/bin/env ln -s /opt/ppaphotel/shared/config/master.key /opt/ppaphotel/releases/20231121074609/config/master.key as ec2-user@54.250.124.86
+ DEBUG [84bcdd0e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/config/master.key /opt/ppaphotel/releases/20231121074609/config/master.key )
+  INFO [84bcdd0e] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [2c1fac84] Running /usr/bin/env mkdir -p /opt/ppaphotel/releases/20231121074609 /opt/ppaphotel/releases/20231121074609/tmp /opt/ppaphotel/releases/20231121074609/vendor /opt/ppaphotel/releases/20231121074609/public as ec2-user@54.250.124.86
+ DEBUG [2c1fac84] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env mkdir -p /opt/ppaphotel/releases/20231121074609 /opt/ppaphotel/releases/20231121074609/tmp /opt/ppaphotel/releases/20231121074609/vendor /opt/ppaphotel/releases/20231121074609/public )
+  INFO [2c1fac84] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [d4fc4dc3] Running [ -L /opt/ppaphotel/releases/20231121074609/log ] as ec2-user@54.250.124.86
+ DEBUG [d4fc4dc3] Command: [ -L /opt/ppaphotel/releases/20231121074609/log ]
+ DEBUG [d4fc4dc3] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [e18fefc1] Running [ -d /opt/ppaphotel/releases/20231121074609/log ] as ec2-user@54.250.124.86
+ DEBUG [e18fefc1] Command: [ -d /opt/ppaphotel/releases/20231121074609/log ]
+ DEBUG [e18fefc1] Finished in 0.116 seconds with exit status 1 (failed).
+  INFO [cf977451] Running /usr/bin/env ln -s /opt/ppaphotel/shared/log /opt/ppaphotel/releases/20231121074609/log as ec2-user@54.250.124.86
+ DEBUG [cf977451] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/log /opt/ppaphotel/releases/20231121074609/log )
+  INFO [cf977451] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [6d76da44] Running [ -L /opt/ppaphotel/releases/20231121074609/tmp/pids ] as ec2-user@54.250.124.86
+ DEBUG [6d76da44] Command: [ -L /opt/ppaphotel/releases/20231121074609/tmp/pids ]
+ DEBUG [6d76da44] Finished in 0.129 seconds with exit status 1 (failed).
+ DEBUG [12a7ad68] Running [ -d /opt/ppaphotel/releases/20231121074609/tmp/pids ] as ec2-user@54.250.124.86
+ DEBUG [12a7ad68] Command: [ -d /opt/ppaphotel/releases/20231121074609/tmp/pids ]
+ DEBUG [12a7ad68] Finished in 0.117 seconds with exit status 1 (failed).
+  INFO [df89a1b2] Running /usr/bin/env ln -s /opt/ppaphotel/shared/tmp/pids /opt/ppaphotel/releases/20231121074609/tmp/pids as ec2-user@54.250.124.86
+ DEBUG [df89a1b2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/tmp/pids /opt/ppaphotel/releases/20231121074609/tmp/pids )
+  INFO [df89a1b2] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [8a67af3a] Running [ -L /opt/ppaphotel/releases/20231121074609/tmp/cache ] as ec2-user@54.250.124.86
+ DEBUG [8a67af3a] Command: [ -L /opt/ppaphotel/releases/20231121074609/tmp/cache ]
+ DEBUG [8a67af3a] Finished in 0.115 seconds with exit status 1 (failed).
+ DEBUG [2704061f] Running [ -d /opt/ppaphotel/releases/20231121074609/tmp/cache ] as ec2-user@54.250.124.86
+ DEBUG [2704061f] Command: [ -d /opt/ppaphotel/releases/20231121074609/tmp/cache ]
+ DEBUG [2704061f] Finished in 0.112 seconds with exit status 1 (failed).
+  INFO [5167e90e] Running /usr/bin/env ln -s /opt/ppaphotel/shared/tmp/cache /opt/ppaphotel/releases/20231121074609/tmp/cache as ec2-user@54.250.124.86
+ DEBUG [5167e90e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/tmp/cache /opt/ppaphotel/releases/20231121074609/tmp/cache )
+  INFO [5167e90e] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [a3b0eff8] Running [ -L /opt/ppaphotel/releases/20231121074609/tmp/sockets ] as ec2-user@54.250.124.86
+ DEBUG [a3b0eff8] Command: [ -L /opt/ppaphotel/releases/20231121074609/tmp/sockets ]
+ DEBUG [a3b0eff8] Finished in 0.115 seconds with exit status 1 (failed).
+ DEBUG [0b8b63a1] Running [ -d /opt/ppaphotel/releases/20231121074609/tmp/sockets ] as ec2-user@54.250.124.86
+ DEBUG [0b8b63a1] Command: [ -d /opt/ppaphotel/releases/20231121074609/tmp/sockets ]
+ DEBUG [0b8b63a1] Finished in 0.118 seconds with exit status 1 (failed).
+  INFO [6b6f980a] Running /usr/bin/env ln -s /opt/ppaphotel/shared/tmp/sockets /opt/ppaphotel/releases/20231121074609/tmp/sockets as ec2-user@54.250.124.86
+ DEBUG [6b6f980a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/tmp/sockets /opt/ppaphotel/releases/20231121074609/tmp/sockets )
+  INFO [6b6f980a] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [998b71fa] Running [ -L /opt/ppaphotel/releases/20231121074609/vendor/bundle ] as ec2-user@54.250.124.86
+ DEBUG [998b71fa] Command: [ -L /opt/ppaphotel/releases/20231121074609/vendor/bundle ]
+ DEBUG [998b71fa] Finished in 0.114 seconds with exit status 1 (failed).
+ DEBUG [8e349d00] Running [ -d /opt/ppaphotel/releases/20231121074609/vendor/bundle ] as ec2-user@54.250.124.86
+ DEBUG [8e349d00] Command: [ -d /opt/ppaphotel/releases/20231121074609/vendor/bundle ]
+ DEBUG [8e349d00] Finished in 0.115 seconds with exit status 1 (failed).
+  INFO [60b66c3d] Running /usr/bin/env ln -s /opt/ppaphotel/shared/vendor/bundle /opt/ppaphotel/releases/20231121074609/vendor/bundle as ec2-user@54.250.124.86
+ DEBUG [60b66c3d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/vendor/bundle /opt/ppaphotel/releases/20231121074609/vendor/bundle )
+  INFO [60b66c3d] Finished in 0.118 seconds with exit status 0 (successful).
+ DEBUG [89e98509] Running [ -L /opt/ppaphotel/releases/20231121074609/public/system ] as ec2-user@54.250.124.86
+ DEBUG [89e98509] Command: [ -L /opt/ppaphotel/releases/20231121074609/public/system ]
+ DEBUG [89e98509] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [080e34ad] Running [ -d /opt/ppaphotel/releases/20231121074609/public/system ] as ec2-user@54.250.124.86
+ DEBUG [080e34ad] Command: [ -d /opt/ppaphotel/releases/20231121074609/public/system ]
+ DEBUG [080e34ad] Finished in 0.114 seconds with exit status 1 (failed).
+  INFO [b4a459f6] Running /usr/bin/env ln -s /opt/ppaphotel/shared/public/system /opt/ppaphotel/releases/20231121074609/public/system as ec2-user@54.250.124.86
+ DEBUG [b4a459f6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/public/system /opt/ppaphotel/releases/20231121074609/public/system )
+  INFO [b4a459f6] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [a2884d00] Running [ -L /opt/ppaphotel/releases/20231121074609/public/uploads ] as ec2-user@54.250.124.86
+ DEBUG [a2884d00] Command: [ -L /opt/ppaphotel/releases/20231121074609/public/uploads ]
+ DEBUG [a2884d00] Finished in 0.115 seconds with exit status 1 (failed).
+ DEBUG [cd24d43c] Running [ -d /opt/ppaphotel/releases/20231121074609/public/uploads ] as ec2-user@54.250.124.86
+ DEBUG [cd24d43c] Command: [ -d /opt/ppaphotel/releases/20231121074609/public/uploads ]
+ DEBUG [cd24d43c] Finished in 0.116 seconds with exit status 1 (failed).
+  INFO [34342d2f] Running /usr/bin/env ln -s /opt/ppaphotel/shared/public/uploads /opt/ppaphotel/releases/20231121074609/public/uploads as ec2-user@54.250.124.86
+ DEBUG [34342d2f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/public/uploads /opt/ppaphotel/releases/20231121074609/public/uploads )
+  INFO [34342d2f] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [a7239aab] Running [ -L /opt/ppaphotel/releases/20231121074609/public/assets ] as ec2-user@54.250.124.86
+ DEBUG [a7239aab] Command: [ -L /opt/ppaphotel/releases/20231121074609/public/assets ]
+ DEBUG [a7239aab] Finished in 0.117 seconds with exit status 1 (failed).
+ DEBUG [09edde4e] Running [ -d /opt/ppaphotel/releases/20231121074609/public/assets ] as ec2-user@54.250.124.86
+ DEBUG [09edde4e] Command: [ -d /opt/ppaphotel/releases/20231121074609/public/assets ]
+ DEBUG [09edde4e] Finished in 0.116 seconds with exit status 1 (failed).
+  INFO [7567bb89] Running /usr/bin/env ln -s /opt/ppaphotel/shared/public/assets /opt/ppaphotel/releases/20231121074609/public/assets as ec2-user@54.250.124.86
+ DEBUG [7567bb89] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; /usr/bin/env ln -s /opt/ppaphotel/shared/public/assets /opt/ppaphotel/releases/20231121074609/public/assets )
+  INFO [7567bb89] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [04f25b7b] Running if test ! -d /opt/ppaphotel/releases/20231121074609; then echo "Directory does not exist '/opt/ppaphotel/releases/20231121074609'" 1>&2; false; fi as ec2-user@54.250.124.86
+ DEBUG [04f25b7b] Command: if test ! -d /opt/ppaphotel/releases/20231121074609; then echo "Directory does not exist '/opt/ppaphotel/releases/20231121074609'" 1>&2; false; fi
+ DEBUG [04f25b7b] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [c1dc477c] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as ec2-user@54.250.124.86
+ DEBUG [c1dc477c] Command: cd /opt/ppaphotel/releases/20231121074609 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [c1dc477c] Finished in 0.285 seconds with exit status 0 (successful).
+  INFO [9688cbc2] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /opt/ppaphotel/shared/bundle as ec2-user@54.250.124.86
+ DEBUG [9688cbc2] Command: cd /opt/ppaphotel/releases/20231121074609 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /opt/ppaphotel/shared/bundle )
+  INFO [9688cbc2] Finished in 0.285 seconds with exit status 0 (successful).
+  INFO [e1e2a7f5] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as ec2-user@54.250.124.86
+ DEBUG [e1e2a7f5] Command: cd /opt/ppaphotel/releases/20231121074609 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [e1e2a7f5] Finished in 0.289 seconds with exit status 0 (successful).
+ DEBUG [5dbeceac] Running if test ! -d /opt/ppaphotel/releases/20231121074609; then echo "Directory does not exist '/opt/ppaphotel/releases/20231121074609'" 1>&2; false; fi as ec2-user@54.250.124.86
+ DEBUG [5dbeceac] Command: if test ! -d /opt/ppaphotel/releases/20231121074609; then echo "Directory does not exist '/opt/ppaphotel/releases/20231121074609'" 1>&2; false; fi
+ DEBUG [5dbeceac] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [4b56b45f] Running $HOME/.rbenv/bin/rbenv exec bundle check as ec2-user@54.250.124.86
+ DEBUG [4b56b45f] Command: cd /opt/ppaphotel/releases/20231121074609 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [4b56b45f] 	Could not locate Gemfile
+ DEBUG [4b56b45f] Finished in 0.306 seconds with exit status 10 (failed).
+  INFO [b2edf322] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as ec2-user@54.250.124.86
+ DEBUG [b2edf322] Command: cd /opt/ppaphotel/releases/20231121074609 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.0" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [b2edf322] 	Could not locate Gemfile

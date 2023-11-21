@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= page_title %></title>
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+</head>
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<body>
+<%= render "layouts/header" %>
+<div class="container py-4 px-0">
+<%= flash_message(flash[:success], :success) if flash[:success] %>
+<%= flash_message(flash[:error], :danger) if flash[:error] %>
+<%= flash_message(flash[:alert], :warning) if flash[:alert] %>
+<%= flash_message(flash[:notice], :info) if flash[:notice] %>
+<%= yield %>
+</div>
+</body>
+</html>
